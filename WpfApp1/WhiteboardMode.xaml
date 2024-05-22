@@ -1,0 +1,13 @@
+﻿<Window x:Class="WpfApp1.WhiteboardMode"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Whiteboard Mode" Height="600" Width="800"
+        TouchDown="Window_TouchDown"
+        TouchMove="Window_TouchMove"
+        TouchUp="Window_TouchUp">
+    <Grid>
+        <Canvas Name="DrawingCanvas" Background="White">
+            <Rectangle x:Name="EraserCursor" Width="20" Height="20" Stroke="Black" StrokeThickness="1" Fill="White" Visibility="Collapsed"/>
+        </Canvas>
+    </Grid>
+</Window>
